@@ -99,9 +99,9 @@ line(ycorEyesStart+35,ycorEyesStart+40, ycorEyesStart+40, ycorEyesStart+35);
   stroke(77, 0, 0, 175);
   //make this slightly see through so you can see the minute and hour hand if they overlap with this
   line(centerX, centerY, cxSecondHand, cySecondHand);
-  println(thetaHourHand+ "  " + thetaMinuteHand + "    " + thetaSecondHand);
+  //println(thetaHourHand+ "  " + thetaMinuteHand + "    " + thetaSecondHand);
 }
-float newX(float pathRadius, float centerX, float theta) {
+function newX(float pathRadius, float centerX, float theta) {
   //keep in mind that centerY for this method is NOT the same as the
   //earlier global variable defined which also happens to be centerX
   float x=(cos(radians(theta)));
@@ -119,7 +119,7 @@ function newY( pathRadius, centerY,  theta) {
   //smooort right
   //yessir
 }
-float thetaHour() {
+function thetaHour() {
   thetaHourHand= ((hour()%12)*360/12)-90;
   return thetaHourHand;
 }
