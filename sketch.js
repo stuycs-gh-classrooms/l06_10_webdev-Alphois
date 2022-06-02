@@ -3,9 +3,9 @@ var
   cxSun;
     var cySun;
         var thetaSun;
-  var cxHourHand, cyHourHand,
- var xMinuteHand, cyMinuteHand, 
-  var cxSecondHand, cySecondHand, 
+  var cxHourHand, cyHourHand;
+ var xMinuteHand, cyMinuteHand;
+  var cxSecondHand, cySecondHand;
   var thetaHourHand, thetaMinuteHand, thetaSecondHand;
   var hourHandLength, minuteHandLength, secondHandLength;
 
