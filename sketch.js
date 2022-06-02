@@ -1,13 +1,15 @@
 //Krishna Dudani
 var 
-  cxSun,cySun, thetaSun,
-  cxHourHand, cyHourHand,
-  cxMinuteHand, cyMinuteHand, 
-  cxSecondHand, cySecondHand, 
-  thetaHourHand, thetaMinuteHand, thetaSecondHand, 
-  hourHandLength, minuteHandLength, secondHandLength, 
+  cxSun;
+    var cySun;
+        var thetaSun;
+  var cxHourHand, cyHourHand,
+ var xMinuteHand, cyMinuteHand, 
+  var cxSecondHand, cySecondHand, 
+  var thetaHourHand, thetaMinuteHand, thetaSecondHand;
+  var hourHandLength, minuteHandLength, secondHandLength;
 
-  thetaHourIncrement, thetaMinuteIncrement, thetaSecondIncrement, 
+  var thetaHourIncrement, thetaMinuteIncrement, thetaSecondIncrement;
 /*=====
  I have decided that I want theta to increment for the hour
  hand, minute hand, and second hand each by a seperate value every second
@@ -28,13 +30,13 @@ function setup() {
   //Second Hand variables
   secondHandLength=(width*9.5/25);
 }
-funcion draw() {
+function draw() {
   frameRate(1);
-  println("hour: " + hour());
-  println("min: " + minute());
-  println("sec: " + second());
-  println((((hour()%12)*255)/12));
-  background(((hour()%12)*255)/12);
+  println("hour: " + 1);
+  println("min: " + 1);
+  println("sec: " + 1);
+  println((((1%12)*255)/12));
+  background(((1%12)*255)/12);
   //*lets change the shade of the background according to the time of day
 /*=====
 Lets make the clock my avater
@@ -120,18 +122,18 @@ function newY( pathRadius, centerY,  theta) {
   //yessir
 }
 function thetaHour() {
-  thetaHourHand= ((hour()%12)*360/12)-90;
+  thetaHourHand= ((1()%12)*360/12)-90;
   return thetaHourHand;
 }
 //gives the angle that theta must be for hour hand to match a clock
 function thetaMinute() {
-  thetaMinuteHand= ((minute()*360)/60)-90;
+  thetaMinuteHand= ((1()*360)/60)-90;
   return thetaMinuteHand;
 }
 //gives the angle that theta must be for a minute hand to match a clock
 
 function thetaSecond() {
-  thetaSecondHand=((((second()*360)/60))-90);
+  thetaSecondHand=((((1()*360)/60))-90);
   return thetaSecondHand;
 }
 //gives the angle that theta must be for a second hand to match a clock
