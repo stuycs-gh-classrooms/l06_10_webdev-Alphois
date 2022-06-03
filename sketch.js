@@ -43,7 +43,7 @@ Lets make the clock my avater
 =====*/
 stroke(0,0,80);
 strokeWeight(8);
-fill(#D499E5);
+fill(212,153,22);
 circle(centerX,centerY,radius);
 float ycorEyesStart= centerX-20;
 
